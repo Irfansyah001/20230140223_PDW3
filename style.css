@@ -1,0 +1,126 @@
+/* ======= Reset dasar untuk menghilangkan margin & padding default ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif; /* Menggunakan font Arial sebagai default */
+}
+
+/* ======= Mengatur warna latar belakang halaman dan teks utama ======= */
+body {
+    background-color: #000; /* Latar belakang hitam */
+    color: #fff; /* Warna teks putih */
+}
+
+/* ======= Navbar ======= */
+header {
+    width: 100%; /* Navbar memenuhi lebar layar */
+    padding: 20px 50px; /* Jarak dalam navbar */
+    display: flex;
+    justify-content: center; /* Menengahkan isi navbar */
+    align-items: center; /* Menengahkan vertikal */
+    position: fixed; /* Navbar tetap di atas saat scroll */
+    top: 0; /* Menempel di atas halaman */
+    background-color: black; /* Warna latar navbar */
+    z-index: 100; /* Menjadikan navbar selalu di atas elemen lain */
+}
+
+/* ======= Logo di Navbar ======= */
+.logo {
+    font-size: 20px; /* Ukuran teks logo */
+    color: rgba(15, 170, 87, 0.7); /* Warna hijau transparan */
+    font-weight: bold; /* Membuat teks lebih tebal */
+    display: flex;
+    justify-content: left; /* Menempatkan logo di kiri */
+    align-items: center; /* Menengahkan logo secara vertikal */
+}
+
+/* ======= Navigasi (Daftar Menu) ======= */
+.nav-links {
+    list-style: none; /* Menghilangkan bullet point pada list */
+    display: flex;
+    gap: 70px; /* Jarak antar menu */
+}
+
+.nav-links li {
+    display: inline; /* Membuat menu sejajar */
+}
+
+/* ======= Link dalam Navigasi ======= */
+.nav-links a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: white; /* Warna teks putih */
+    font-size: 30px; /* Ukuran teks */
+    transition: 0.5s; /* Efek transisi saat hover */
+}
+
+/* Warna saat hover atau menu aktif */
+.nav-links a:hover,
+.nav-links a.active {
+    color: rgba(15, 170, 87, 0.7); /* Warna hijau transparan */
+    border-bottom: 2px solid rgba(15, 170, 87, 0.7); /* Garis bawah saat aktif */
+}
+
+/* ======= Hero Section (Bagian Utama) ======= */
+.hero {
+    display: flex; /* Membuat gambar & teks sejajar */
+    align-items: center; /* Menengahkan elemen vertikal */
+    justify-content: center; /* Menengahkan elemen horizontal */
+    height: 100vh; /* Menyesuaikan tinggi layar penuh */
+    gap: 50px; /* Jarak antara gambar dan teks */
+    padding-top: 80px; /* Menghindari overlap dengan navbar */
+}
+
+/* ======= Gambar Profil di Hero ======= */
+.hero-image img {
+    width: 350px; /* Lebar gambar */
+    height: auto; /* Tinggi otomatis menyesuaikan */
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    box-shadow: 0px 0px 15px rgba(15, 170, 87, 0.7); /* Efek bayangan hijau */
+}
+
+/* ======= Teks di Hero ======= */
+.hero-text {
+    max-width: 500px; /* Maksimum lebar teks */
+}
+
+/* Ukuran teks utama */
+.hero-text h2 {
+    font-size: 40px;
+}
+
+/* Ukuran teks subheading */
+.hero-text h3 {
+    font-size: 30px;
+}
+
+/* Gaya paragraf */
+.hero-text p {
+    font-size: 16px;
+    margin: 20px 0; /* Jarak antar paragraf */
+    color: #bbb; /* Warna teks abu-abu */
+}
+
+/* Gaya untuk teks yang diberi highlight */
+.highlight {
+    color: rgba(15, 170, 87, 0.7); /* Warna hijau transparan */
+    font-weight: bold;
+}
+
+/* ======= Tombol Hire Me ======= */
+.hire-btn {
+    background: transparent; /* Latar belakang transparan */
+    color: rgba(15, 170, 87, 0.7); /* Warna hijau transparan */
+    border: 2px solid rgba(15, 170, 87, 0.7); /* Border hijau */
+    padding: 10px 20px; /* Padding tombol */
+    font-size: 16px;
+    border-radius: 5px; /* Membuat sudut tombol melengkung */
+    cursor: pointer; /* Mengubah kursor menjadi tangan saat hover */
+    transition: 0.3s; /* Efek transisi saat hover */
+}
+
+/* Efek tombol saat di-hover */
+.hire-btn:hover {
+    background: rgba(255, 255, 255, 0.7); /* Warna putih transparan */
+    color: black; /* Warna teks hitam */
+}
